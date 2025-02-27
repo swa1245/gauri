@@ -439,7 +439,6 @@ body {
     }
 }
 
-/* Small mobile devices */
 @media (max-width: 480px) {
     .navbar {
         padding: 0.8rem 1rem;
@@ -2768,4 +2767,624 @@ body {
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+}
+
+/* About Page Styles */
+.about-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./banner/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 80px;
+}
+
+.about-hero .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero .hero-content p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.about-intro-section {
+    padding: 100px 80px;
+    background-color: var(--background-light);
+}
+
+.about-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-intro-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.about-intro-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease;
+}
+
+.about-intro-image img:hover {
+    transform: scale(1.05);
+}
+
+.company-album-section {
+    padding: 100px 80px;
+    background-color: #fff;
+}
+
+.album-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    color: #fff;
+}
+
+.overlay-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.factsheet-section, 
+.statutory-section, 
+.payment-shipment-section, 
+.brands-section {
+    padding: 100px 80px;
+    
+}
+
+.factsheet-section {
+    background-color: var(--background-light);
+}
+
+.statutory-section {
+    background-color: #fff;
+}
+
+.payment-shipment-section {
+    background-color: var(--background-light);
+}
+
+.brands-section {
+    background-color: #fff;
+}
+
+.factsheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.factsheet-card, 
+.statutory-card, 
+.details-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+.factsheet-card:hover, 
+.statutory-card:hover, 
+.details-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-icon {
+    background: var(--gradient-primary);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.card-icon i {
+    font-size: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-content ul li {
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.statutory-grid, 
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.brands-container {
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-category {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.brand-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.brands-grid {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brand-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--shadow-md);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    background: var(--gradient-primary);
+    color: #fff;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo i {
+    font-size: 2.5rem;
+}
+
+.brand-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Responsive Styles for About Page */
+@media (max-width: 992px) {
+    .about-intro-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .album-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .about-hero {
+        height: 50vh;
+    }
+    
+    .album-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .statutory-grid, 
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Refined About Page Styles */
+.about-hero {
+    height: 65vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./banner/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 80px;
+}
+
+.about-hero .hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero .hero-content p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-intro-section {
+    padding: 120px 80px;
+    background-color: var(--background-light);
+}
+
+.about-intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-intro-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.about-intro-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-intro-image img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.company-album-section {
+    padding: 120px 80px;
+    background-color: #fff;
+}
+
+.album-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    height: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    color: #fff;
+}
+
+.overlay-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.factsheet-section, 
+.statutory-section, 
+.payment-shipment-section, 
+.brands-section {
+    padding: 120px 80px;
+}
+
+.factsheet-section {
+    background-color: var(--background-light);
+}
+
+.statutory-section {
+    background-color: #fff;
+}
+
+.payment-shipment-section {
+    background-color: var(--background-light);
+}
+
+.brands-section {
+    background-color: #fff;
+}
+
+.factsheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.factsheet-card, 
+.statutory-card, 
+.details-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+.factsheet-card:hover, 
+.statutory-card:hover, 
+.details-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-icon {
+    background: var(--gradient-primary);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.card-icon i {
+    font-size: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-content ul li {
+    margin-bottom: 5px;
+    color: var(--text-secondary);
+}
+
+.statutory-grid, 
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.brands-container {
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-category {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.brand-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.brands-grid {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.brand-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    background: var(--gradient-primary);
+    color: #fff;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-logo i {
+    font-size: 2.5rem;
+}
+
+.brand-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Responsive Styles for Refined About Page */
+@media (max-width: 992px) {
+    .about-intro-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .album-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero .hero-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .about-hero {
+        height: 50vh;
+    }
+    
+    .album-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .statutory-grid, 
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
 }
