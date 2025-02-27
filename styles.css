@@ -3468,6 +3468,7 @@ body {
 }
 
 .dropdown-toggle {
+   
     display: flex;
     align-items: center;
     gap: 5px;
@@ -3479,10 +3480,12 @@ body {
 }
 
 .nav-item.dropdown:hover .dropdown-toggle i {
+    /* margin-top: 10px; */
     transform: rotate(-180deg);
 }
 
 .dropdown-menu {
+    margin-top: 20px;
     position: absolute;
     top: 100%;
     left: 0;
