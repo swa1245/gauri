@@ -1756,14 +1756,14 @@ body {
 }
 
 .intro-image {
-    flex: 0 0 500px;
+    flex: 0 0 380px;
     position: relative;
 }
 
 .intro-image img {
     width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
