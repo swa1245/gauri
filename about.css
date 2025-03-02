@@ -322,7 +322,7 @@
 
 .brands-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     gap: 30px;
     margin-top: 30px;
 }
@@ -697,7 +697,7 @@
 
 @media (max-width: 768px) {
     .brands-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
         gap: 20px;
     }
 
